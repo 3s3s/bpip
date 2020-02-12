@@ -1,0 +1,1 @@
+document.getElementById("settings_link").addEventListener("click", () => { browser.runtime.openOptionsPage(); });

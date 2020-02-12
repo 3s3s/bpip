@@ -1,0 +1,19 @@
+.ext-menu {
+    white-space: nowrap;
+}
+
+.ext-menu a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.ext-menu a:hover {
+    background-color: #eee;
+}
+
+.ext-menu .version {
+    color: #555;
+}

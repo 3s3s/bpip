@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BPIP Extension Settings</title>
+    <link rel="stylesheet" href="../css/settings.css" />
+</head>
+<body>
+
+    <div class="setting">
+        <span class="setting_title">Version: </span>
+        <span id="version"></span>
+    </div>
+    <div class="setting">
+        <span class="setting_title">Support: </span>
+        <a href="https://bitcointalk.org/index.php?topic=5224821" target="_blank">Thread on BitcoinTalk</a>
+    </div>
+    <div class="setting">
+        <span class="setting_title">Show BPIP links to user profile: </span><label class="switch"><input type="checkbox" id="show_bpip"><span class="toggle"></span></label>
+    </div>
+    <div class="setting">
+        <span class="setting_title">* Show DefaultTrust position: </span><label class="switch"><input type="checkbox" id="show_dt"><span class="toggle"></span></label>
+    </div>
+    <div class="setting">
+        <span class="setting_title">* Show banned/inactive/archived status: </span><label class="switch"><input type="checkbox" id="show_status"><span class="toggle"></span></label>
+    </div>
+    <div>
+        <i>* Extension will download data from BPIP server if you enable any of these settings.</i>
+    </div>
+    <div>
+        <a href="#" class="advanced-link">Advanced options&nbsp;&nbsp;&nbsp;&#9660;</a>
+        <div class="setting advanced">
+            <span class="setting_title">Clear downloaded BPIP data: </span><button class="clear-cache">Clear</button>
+        </div>
+        <div class="setting advanced">
+            <span class="setting_title" id="extension_id"></span>
+        </div>
+    </div>
+    <div><span id="result"></span>&nbsp;</div>
+
+    <script type="application/javascript" src="../js/browser-polyfill.js"></script>
+    <script type="application/javascript" src="../js/common.js"></script>
+    <script type="application/javascript" src="../js/settings.js"></script>
+
+</body>
+</html>

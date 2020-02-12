@@ -1,0 +1,55 @@
+{
+    "manifest_version": 2,
+    "name": "BPIP Extension",
+    "description": "Provides additional features to BitcoinTalk.org using data from BPIP.org",
+    "version": "2.0.3",
+    "author": "BPIP Developers",
+
+    "browser_action": {
+        "default_title": "BPIP Extension",
+        "default_icon": {
+            "16": "img/n16.png",
+            "32": "img/n32.png",
+            "64": "img/n64.png",
+            "128": "img/128f.png"
+        }
+    },
+
+    "content_scripts": [
+        {
+            "matches": [ "https://bitcointalk.org/*" ],
+            "js": [ "js/browser-polyfill.js", "js/common.js", "js/bct-content.js" ],
+            "css": [ "css/bct-content.css" ],
+            "run_at": "document_idle"
+        }
+    ],
+    
+    "background": 
+    {
+      "scripts": [ "js/browser-polyfill.js", "js/common.js", "js/background.js" ]
+    },
+    
+    "options_ui": {
+        "page": "html/settings.html",
+        "open_in_tab": false
+    },
+      
+    "icons": {
+        "16": "img/n16.png",
+        "32": "img/n32.png",
+        "64": "img/n64.png",
+        "128": "img/128f.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{87c4d097-3748-4fea-b234-29aff57a5843}",
+            "strict_min_version": "57.0"
+        }
+    }
+}
